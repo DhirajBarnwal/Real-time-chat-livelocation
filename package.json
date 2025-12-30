@@ -1,54 +1,43 @@
 {
-  "name": "realtime-team-chat-backend",
-  "version": "1.0.0",
-  "description": "Real-time chat application with location sharing for teams",
-  "main": "src/server.js",
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "seed": "node src/utils/seedDatabase.js",
-    "test": "jest --watchAll",
-    "test:ci": "jest",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  },
-  "homepage": "https://dhirajmohanty.github.io/realtime-team-chat-frontend",
-  "keywords": [
-    "chat",
-    "realtime",
-    "teams",
-    "socket.io",
-    "mern"
-  ],
-  "author": "",
-  "license": "ISC",
+  "name": "teamchat-frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cloudinary": "^2.8.0",
-    "compression": "^1.7.4",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-mongo-sanitize": "^2.2.0",
-    "express-rate-limit": "^6.10.0",
-    "express-validator": "^7.0.1",
-    "helmet": "^7.0.0",
-    "http-errors": "^2.0.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.5.0",
-    "multer": "^2.0.0-rc.1",
-    "nodemailer": "^7.0.11",
-    "puppeteer": "^24.34.0",
-    "socket.io": "^4.7.2",
-    "socket.io-client": "^4.8.3",
-    "validator": "^13.11.0",
-    "winston": "^3.10.0"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.13.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "engines": {
-    "node": ">=16.0.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+
   }
 }
